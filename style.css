@@ -174,6 +174,11 @@ img {
   padding: 0 25px;
   margin: 0 auto 20px;
 }
+
+.button a {
+  text-decoration: none;
+}
+
 @media (min-width: 1024px) {
   .button {
     margin: 4px 10px 4px 0;
@@ -644,3 +649,98 @@ img {
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
+
+/* Bellow CSS was created manually outside of SASS project */
+
+a {
+  text-decoration: none;
+}
+
+.inner-page {
+  margin-top: 50px;
+}
+
+.wpcf7 .screen-reader-response {
+  display: none;
+}
+
+.site-form-field-half {
+  width: 210px;
+  max-width: 100%;
+}
+
+.contact-us__form {
+  display: flex;
+  justify-content: center;
+}
+
+.half-form-field-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13px;
+}
+
+.site-form-field-half {
+  background: none;
+}
+
+.site-form-field-whole {
+  margin-bottom: 13px;
+  background: none;
+}
+
+.home-form-field-submit {
+  align-items: center;
+  align-self: flex-start;
+  border: none;
+  display: inline-flex;
+  font-size: 1.25rem;
+  height: 50px;
+  justify-content: center;
+  min-width: 200px;
+  padding: 0 25px;
+  background: #C69C6C;
+  box-shadow: 3px 3px 6px 0px #717171;
+  color: black;
+}
+
+.form-submit-button {
+  text-align: center;
+}
+
+.wpcf7-spinner {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .home-form-field-submit {
+    margin: 4px 10px 4px 0;
+  }
+}
+
+.desktop-navigation__routes a {
+  color: black;
+  text-decoration: none;
+}
+
+.mobile-navigation__routes a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer__navigation a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer .footer__badge-container {
+  display: flex;
+  margin-left: 120px;
+}
+
+@media (min-width: 1024px) {
+  .footer .footer__badge-container {
+    display: flex;
+    margin-left: 120px;
+  }
+}

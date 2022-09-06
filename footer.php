@@ -1,25 +1,29 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__content">
-        <ul class="footer__navigation">
-          <li>About</li>
-          <li>Previous Litters</li>
-          <li>Reviews</li>
-          <li>Our Queens</li>
-          <li>Application</li>
-          <li>Contact</li>
-        </ul>
+
+
+    <?php 
+      wp_nav_menu(
+        array(
+          'menu' => 'primary',
+          'container' => '',
+          'theme_location' => 'primary',
+          'items_wrap' => '<ul class="footer__navigation">%3$s</ul>'
+        )
+      );
+    ?>        
         <div class="footer__badge-container">
           <figure class="footer__badge">
-            <img src="assets/good-breeder-icon.webp" alt="Good Breeder Badge">
+            <img src="/wp-content/uploads/good-breeder-icon.webp" alt="Good Breeder Badge">
           </figure>
           <figure class="footer__badge">
-            <img src="assets/east-coast-k9-badge.webp" alt="East Coast K9 Badge">
+            <img src="/wp-content/uploads/east-coast-k9-badge.webp" alt="East Coast K9 Badge">
           </figure>
         </div>
         <div class="footer__contact">
           <figure class="footer__logo">
-            <img src="/assets/stone-creek-logo.webp" alt="">
+            <img src="/wp-content/uploads/2022/09/stone-creek-logo.webp" alt="Stone Creek Dachshunds Logo">
           </figure>
         </div>
       </div>

@@ -2,16 +2,6 @@
   <?php
     get_header();
   ?>
-  <main>
-    <figure class="mobile-only">
-      <img class="hero-slider" src="/assets/mobile-hero-slider-slide-one.webp" alt="Site banner with Dachshunds">
-    </figure>
-    <figure class="desktop-only">
-         
-      <div class="hero-slider">
-        <!-- Slider will go here -->
-      </div>
-    </figure>
     <section class="full-width-content container">
       <h1 class="full-width-content__heading">
         <?php
@@ -278,7 +268,7 @@
               if($value) {
                   echo $value;
               }
-            ?>    
+            ?>
           </h5>
           <p>
             <?php
@@ -286,7 +276,7 @@
                 if($value) {
                     echo $value;
                 }
-            ?>      
+            ?>
           </p>
         </div>
     </div>
@@ -296,8 +286,9 @@
     <h2 class="contact-us__heading h1">
       Contact Us
     </h2>
-    
-
+    <div class="contact-us__form">
+      <?php echo apply_shortcodes( '[contact-form-7 id="93" title="Site Contact"]' ); ?>
+    </div>
   </section>
   <?php
     get_footer();
