@@ -67,11 +67,7 @@
   </nav>
 
   <main>
-    <figure class="mobile-only">
-      <img class="hero-slider" src="/assets/mobile-hero-slider-slide-one.webp" alt="Site banner with Dachshunds">
-    </figure>
     <figure class="desktop-only">
-         
       <div class="hero-slider">
       <?php
         echo do_shortcode('[smartslider3 slider="2"]');

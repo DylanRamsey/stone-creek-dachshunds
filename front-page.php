@@ -19,12 +19,14 @@
           }
         ?>
       </p>
-      <a href="<?php
-                $value = get_field("first_section_button_link");
-                if($value) {
-                    echo $value;
-                }
-               ?>">
+      <a href="
+        <?php
+          $value = get_field("first_section_button_link");
+          if($value) {
+              echo $value;
+          }
+        ?>
+      ">
         <button class="button button--light">
           <?php
             $value = get_field("first_section_button_text");

@@ -650,7 +650,7 @@ img {
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
 
-/* Bellow CSS was created manually outside of SASS project */
+/* Bellow CSS was created manually outside of SASS project. Should add this back into the static SASS project sometime */
 
 a {
   text-decoration: none;
@@ -733,14 +733,111 @@ a {
   color: black;
 }
 
-.footer .footer__badge-container {
-  display: flex;
-  margin-left: 120px;
-}
+
 
 @media (min-width: 1024px) {
   .footer .footer__badge-container {
     display: flex;
     margin-left: 120px;
+  }
+}
+
+.center-text {
+  text-align: center;
+}
+
+/* Review page */
+
+.review-cards {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .review-cards {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+}
+
+.review-card {
+  width: 270px;
+  border: solid;
+  margin-top: 25px;
+  padding: 10px 20px;
+  box-shadow: 3px 3px 6px 0px #3b3b3b;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+
+@media (min-width: 768px) {
+  .review-card {
+    width: 450px;
+    border: solid;
+    padding: 20px 30px;
+    box-shadow: 3px 3px 6px 0px #3b3b3b;
+    
+  }
+}
+
+.review-card__image img {
+  margin: 0 auto;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.site-primary-color {
+  color: #C69C6C;
+}
+
+.review-platforms {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.review-platform {
+  width: 150px;
+  max-width: 100%;
+  margin: 20px;
+}
+
+.queen {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 1024px) {
+  .queen {
+    flex-flow: row;
+  }
+}
+
+.queen-content__body {
+  color: black;
+}
+
+.queen-content {
+  margin-left: 35px;
+}
+
+.queen-image img {
+  border-radius: 10px;
+
+  max-width: 100%;
+  margin-bottom: 25px;
+}
+
+@media (min-width: 1024px) {
+  .queen-image img {
+    margin-bottom: 0;
+    min-width: 300px;
   }
 }
