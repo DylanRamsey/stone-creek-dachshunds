@@ -660,6 +660,11 @@ a {
   margin-top: 50px;
 }
 
+input[type=text] {
+  border: solid black 2px;
+  border-radius: 4px;
+}
+
 .wpcf7 .screen-reader-response {
   display: none;
 }
@@ -674,19 +679,28 @@ a {
   justify-content: center;
 }
 
+.form-wrapper {
+  margin: auto;
+  width: 450px;
+  max-width: 100%;
+}
+
 .half-form-field-group {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 13px;
+  width: 100%;
 }
 
 .site-form-field-half {
   background: none;
+  margin-bottom: 13px;
 }
 
 .site-form-field-whole {
   margin-bottom: 13px;
   background: none;
+  width: 100%;
 }
 
 .home-form-field-submit {

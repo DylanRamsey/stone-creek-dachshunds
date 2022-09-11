@@ -27,14 +27,14 @@
           }
         ?>
       ">
-        <button class="button button--light">
+        <span class="button button--light">
           <?php
             $value = get_field("first_section_button_text");
             if($value) {
                 echo $value;
             }
           ?>
-        </button>
+        </span>
       </a>
     </section>
     <section class="content-with-image">
@@ -64,14 +64,14 @@
               }
             ?>
           ">
-            <button class="button button--dark">
+            <span class="button button--dark">
               <?php
                 $value = get_field("content_with_image_button_text");
                 if($value) {
                     echo $value;
                 }
               ?>
-            </button>
+            </span>
           </a>
         </div>
         <div class="content-with-image__image content-with-image__image--desktop">
@@ -149,14 +149,14 @@
               }
               ?>">
           </figure>
-          <button class="button button--light">MEET 
+          <span class="button button--light">MEET 
           <?php
               $value = get_field("queen_one_name");
               if($value) {
                   echo $value;
               }
             ?>
-          </button>
+          </span>
         </div>
         <div class="queen-box">
           <h3 class="queen-box__heading">
@@ -183,14 +183,14 @@
               }
               ?>">
           </figure>
-          <button class="button button--light">MEET 
+          <span class="button button--light">MEET 
           <?php
               $value = get_field("queen_two_name");
               if($value) {
                   echo $value;
               }
           ?>
-          </button>
+          </span>
         </div>
         <div class="queen-box">
           <h3 class="queen-box__heading">
@@ -217,14 +217,14 @@
               }
               ?>">
           </figure>
-          <button class="button button--light">MEET 
+          <span class="button button--light">MEET 
           <?php
               $value = get_field("queen_three_name");
               if($value) {
                   echo $value;
               }
           ?>
-          </button>
+          </span>
         </div>
       </section>    
     </section>
