@@ -2,13 +2,12 @@
     <div class="container">
       <div class="footer__content">
 
-
     <?php 
       wp_nav_menu(
         array(
-          'menu' => 'primary',
+          'menu' => 'footer',
           'container' => '',
-          'theme_location' => 'primary',
+          'theme_location' => 'footer',
           'items_wrap' => '<ul class="footer__navigation">%3$s</ul>'
         )
       );

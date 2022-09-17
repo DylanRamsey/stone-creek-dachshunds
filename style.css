@@ -665,6 +665,13 @@ input[type=text] {
   border-radius: 4px;
 }
 
+select {
+  font: inherit;
+  border: solid black 2px;
+  border-radius: 4px;
+  background: none;
+}
+
 .wpcf7 .screen-reader-response {
   display: none;
 }
@@ -681,8 +688,14 @@ input[type=text] {
 
 .form-wrapper {
   margin: auto;
-  width: 450px;
   max-width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .form-wrapper {
+    margin: auto;
+    width: 500px;
+  }
 }
 
 .half-form-field-group {
@@ -691,6 +704,21 @@ input[type=text] {
   justify-content: space-between;
   width: 100%;
 }
+
+
+.half-form-field-group input {
+  width: 240px;
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .half-form-field-group input {
+    width: 240px;
+    max-width: 100%;
+  }
+}
+
 
 .site-form-field-half {
   background: none;
@@ -855,3 +883,18 @@ input[type=text] {
     min-width: 300px;
   }
 }
+
+.previous-litter-gallery {
+  margin-top: 40px;
+}
+
+.previous-litters-group {
+  margin-top: 40px;
+}
+
+.previous-litters-group img {
+  margin: auto;
+  max-width: 100%;
+  width: 750px;
+}
+

@@ -16,7 +16,8 @@ function stoneCreek_register_scripts() {
 
 function stoneCreek_menus(){
   $locations = array(
-    'primary' => "Desktop Primary Menu"
+    'primary' => "Desktop Primary Menu",
+    'footer' => "Footer Primary Menu"
   );
 
   register_nav_menus($locations);

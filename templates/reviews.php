@@ -128,6 +128,7 @@
   </div>
 </section>
 
+<!--
 <section class="contact-us container">
   <h2 class="contact-us__heading h1">
     Submit a review
@@ -136,16 +137,20 @@
     <?php echo apply_shortcodes( '[contact-form-7 id="112" title="Reviews Page Reviews"]' ); ?>
   </div>
 </section>
-
+        -->
 <section>
   <h2 class="center-text site-primary-color">Leave a review on these platforms</h2>
   <div class="review-platforms container">
-    <figure class="review-platform">
-      <img src="/wp-content/uploads/fb-logo.webp" alt="Facebook Logo">
-    </figure>
-    <figure class="review-platform">
-      <img src="/wp-content/uploads/google-logo.webp" alt="Google Logo">
-    </figure>
+    <a href=" https://www.facebook.com/profile.php?id=100076160003173&sk=reviews" target="_blank">
+      <figure class="review-platform">
+        <img src="/wp-content/uploads/fb-logo.webp" alt="Facebook Logo">
+      </figure>
+    </a>
+    <a target="_blank" href="https://www.google.com/search?q=stone+creek+dachshunds+north+port&sxsrf=ALiCzsbbc3PwJqa8tWp3zj0tSyaBIeR6WA%3A1663021845710&ei=FbMfY-D0Kp3JwbkPk8SigA4&ved=0ahUKEwig0_eSp5D6AhWdZDABHROiCOAQ4dUDCA4&uact=5&oq=stone+creek+dachshunds+north+port&gs_lcp=Cgdnd3Mtd2l6EAMyBQghEKABMgUIIRCgATIFCCEQoAE6BAgAEEc6BggAEB4QFjoFCAAQhgM6BQghEKsCOgsILhCABBDHARCvAUoECEEYAEoECEYYAFD_A1iFGmC7GmgCcAJ4AIABZYgBpAiSAQQxMS4xmAEAoAEByAEIwAEB&sclient=gws-wiz#lrd=0x4ec447f05a934b8f:0x2048aa4b05f8063d,3,,,">
+      <figure class="review-platform">
+        <img src="/wp-content/uploads/google-logo.webp" alt="Google Logo">
+      </figure>
+    </a>
   </div>
 </section>
 
