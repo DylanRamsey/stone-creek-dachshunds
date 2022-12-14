@@ -1,0 +1,14 @@
+@use 'config' as *;
+
+.previous-litter-gallery {
+  margin-top: 40px;
+}
+
+.previous-litters-group {
+  margin-top: 40px;
+  img {
+    margin: auto;
+    max-width: 100%;
+    width: 750px;
+  }
+}

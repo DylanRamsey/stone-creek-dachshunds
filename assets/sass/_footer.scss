@@ -1,0 +1,71 @@
+@use 'config' as *;
+.footer {
+  background: $primary;
+  display: flex;
+  flex-flow: column;
+  padding: 30px 0;
+  .footer__content {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    justify-content: space-between;
+    @media (min-width: $desktop) {
+      flex-flow: row;
+    }
+  }
+
+  .footer__navigation {
+    font-size: 24px;
+    list-style-type: none;
+    padding: 0;
+    align-self: flex-start;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    @media (min-width: $tablet) {
+      align-self: center;
+    }
+    @media (min-width: $desktop) {
+      font-size: 1.125rem;
+      align-self: flex-start;
+    }
+  }
+
+  .footer__badge-container {
+    display: flex;
+    @media (min-width: $desktop) {
+      margin-left: 120px;
+    }
+  }
+
+  .footer__badge {
+    padding: 20px;
+    width: 160px;
+    @media (min-width: $tablet) {}
+    @media (min-width: $desktop) {
+      width: 200px;
+    }
+    @media (min-width: $widescreen) {}
+  }
+
+  .footer__logo {
+    width: 200px;
+    @media (min-width: $tablet) {}
+    @media (min-width: $desktop) {
+      width: 260px;
+    }
+    @media (min-width: $widescreen) {}
+  }
+
+  .footer__credit {
+    padding-top: 30px;
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}

@@ -7,7 +7,7 @@ function stone_creek_theme_support(){
 
 function stoneCreek_register_styles() {
   $version = wp_get_theme()->get( 'Version' );
-  wp_enqueue_style('stonecreek-css', get_template_directory_uri() . "/style.css", array(), $version , 'all');
+  wp_enqueue_style('stonecreek-css', get_template_directory_uri() . "/assets/css/main.css", array(), $version , 'all');
 }
 
 function stoneCreek_register_scripts() {

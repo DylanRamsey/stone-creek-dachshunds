@@ -1,0 +1,80 @@
+@use 'config' as *;
+.testimonial-banner {
+  background: $primary;
+  @media (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
+  @media (min-width: $desktop) {
+    height: 345px;
+  }
+
+  .testimonial-banner__container {
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 100%;
+    width: $phoneContainer;
+    @media (min-width: $tablet) {
+      width: $tabletContainer;
+    }
+    @media (min-width: $desktop) {
+      flex-flow: row;
+      width: $deskTopContainer;
+    }
+    @media (min-width: $widescreen) {
+      width: $widescreenContainer;
+    }
+  }
+
+  .testimonial-banner__quote {
+    padding: 30px 0;
+    h5 {
+      font-weight: lighter;
+    }
+    @media (min-width: $tablet) {
+      padding: 30px 30px;
+    }
+    @media (min-width: $desktop) {
+      margin: 0 30px;
+    }
+    @media (min-width: $widescreen) {}
+  }
+  
+  .testimonial-banner__image {
+    width: 100%;
+    
+    @media (min-width: $tablet) {
+      width: 300px;
+    }
+    @media (min-width: $desktop) {
+      min-width: 330px;
+    }
+  }
+
+  .testimonial-banner__image--mobile {
+    width: 425px;
+    max-width: 100%;
+    margin: auto;
+    @media (min-width: $tablet) {
+
+    }
+    @media (min-width: $desktop) {
+      display: none;
+    }
+    @media (min-width: $widescreen) {}
+  }
+
+  .testimonial-banner__image--desktop {
+    display: none;
+    @media (min-width: $tablet) {
+
+    }
+    @media (min-width: $desktop) {
+      display: block;
+    }
+    @media (min-width: $widescreen) {}
+  }
+}

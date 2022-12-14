@@ -1,0 +1,51 @@
+@use 'config' as *;
+.review-cards {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  @media (min-width: $desktop) {
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      row-gap: 32px;
+  }
+}
+
+.review-card {
+  width: 270px;
+  border: solid;
+  border-width: 2px;
+  margin-top: 25px;
+  padding: 10px 20px;
+  box-shadow: 1px 1px 1px 0px #272727;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  margin: 10px auto;
+  border-radius: 7px;
+  min-height: 425px;
+  border-color: #333333;
+  @media (min-width: $tablet) {
+      width: 450px;
+      border: solid;
+      padding: 20px 30px;
+  }
+  .review-card__image img {
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.review-platforms {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+  .review-platform {
+    width: 150px;
+    max-width: 100%;
+    margin: 20px;
+  }
+}

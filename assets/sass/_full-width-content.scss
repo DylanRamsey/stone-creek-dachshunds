@@ -1,0 +1,13 @@
+@use 'config' as *;
+.full-width-content {
+  display: flex;
+  flex-flow: column;
+  padding: 30px 0;
+  justify-content: center;
+
+  @media (min-width: $tablet) {}
+  @media (min-width: $desktop) {
+    height: 400px;
+  }
+  @media (min-width: $widescreen) {}
+}

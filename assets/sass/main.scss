@@ -1,0 +1,23 @@
+/*
+Theme Name: Stone Creek
+Text Domain: Stone Creek
+Version: 1.0
+Description: Custom theme for dog breader website
+Tags: dogs
+Author: Dylan Ramsey
+Author URI: https://dylanbradramsey.com
+*/
+@use 'config' as *;
+@use 'reset';
+@use 'global';
+@use 'navigation';
+@use 'hero-slider';
+@use 'full-width-content';
+@use 'content-with-image';
+@use 'queens';
+@use 'testimonial-banner';
+@use 'contact';
+@use 'footer';
+@use 'forms';
+@use 'review-cards';
+@use 'previous-litters';

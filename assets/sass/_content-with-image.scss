@@ -1,0 +1,70 @@
+@use 'config' as *;
+.content-with-image {
+  background: $primary;
+  padding-top: 30px;
+  @media (min-width: $tablet) {
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+  }
+  @media (min-width: $desktop) {
+    padding: unset;
+  }
+  @media (min-width: $widescreen) {}
+  .content-with-image__container {
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto ;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 280px;
+    @media (min-width: $tablet) {
+      width: $tabletContainer;
+      display: flex;
+      justify-content: center;
+    }
+    @media (min-width: $desktop) {
+      flex-flow: row;
+      justify-content: space-between;
+      width: $deskTopContainer;
+    }
+    @media (min-width: $widescreen) {
+      width: $widescreenContainer;
+    }
+  }
+  
+  .content-with-image__content{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    max-width: 450px;
+    @media (min-width: $tablet) {
+      padding: 0 20px;
+    }
+    @media (min-width: $desktop) {
+      padding: 0;
+    }
+    @media (min-width: $widescreen) {}
+  }
+
+  .content-with-image__image--mobile {
+    width: 425px;
+    max-width: 100%;
+    margin: auto;
+    @media (min-width: $tablet) {}
+    @media (min-width: $desktop) {
+      display: none;
+    }
+    @media (min-width: $widescreen) {}
+  }
+
+  .content-with-image__image--desktop {
+    display: none;
+    @media (min-width: $tablet) {
+    }
+    @media (min-width: $desktop) {
+      display: block;
+    }
+    @media (min-width: $widescreen) {}
+  }
+}

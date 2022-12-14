@@ -1,0 +1,81 @@
+@use 'config' as *;
+.queen {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 50px;
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .queen-content {
+    @media (min-width: $desktop) {
+      margin-left: 35px;
+    }
+  }
+
+  .queen-content__body {
+    color: black;
+  }
+
+  .queen-image img {
+    border-radius: 10px;
+    width: 100%;
+    max-height: 350px;
+    margin-bottom: 25px;
+
+    @media (min-width: $desktop) {
+      margin-bottom: 0;
+      min-width: 300px;
+    }
+  }
+  
+}
+
+.queens {
+  color: $primary;
+  padding: 30px 0;
+
+  @media (min-width: $tablet) {}
+  @media (min-width: $desktop) {
+    padding: 100px 0;
+  }
+  @media (min-width: $widescreen) {}
+}
+
+.queens_h1 {
+  text-align: center;
+  font-size: 2rem;
+  @media (min-width: $tablet) {}
+  @media (min-width: $desktop) {
+    font-size: 4.0625rem;
+  }
+  @media (min-width: $widescreen) {}
+}
+
+.queen-boxes {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+
+  @media (min-width: $tablet) {}
+  @media (min-width: $desktop) {
+    flex-flow: row;
+  }
+  @media (min-width: $widescreen) {}
+
+  .queen-box {
+    color: black;
+    text-align: center;
+    width: 300px;
+    max-width: 100%;
+    margin: 0 auto;
+  
+    .queen-box__heading {
+      margin-bottom: 25px;
+    }
+    
+    .queen-box__image {
+      margin-bottom: 30px;
+    }
+  }
+}
