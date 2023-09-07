@@ -8,11 +8,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
   <script src="js/index.js"></script>
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <?php
   wp_head();
   ?>
-
 </head>
 <body>
   <nav class="mobile-navigation mobile-only ">
@@ -53,7 +53,6 @@
         <img class="desktop-navigation__site-logo" src="/wp-content/uploads/2022/09/stone-creek-logo.webp" alt="Logo for Stone Creek Dachshunds">
       </a>
     </figure>
-
     <?php 
       wp_nav_menu(
         array(
@@ -65,13 +64,5 @@
       );
     ?>
   </nav>
-
   <main>
-    <figure class="desktop-only">
-      <div class="hero-slider">
-      <?php
-        echo do_shortcode('[smartslider3 slider="2"]');
-      ?>
-      </div>
-    </figure>
   

@@ -1,0 +1,125 @@
+@use 'config' as *;
+.photo-gallery {
+  justify-content: center;
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, 580px);
+  }
+}
+
+.photo-gallery__group {
+  display: flex;
+  flex-flow: column;
+  margin: 0 auto;
+  max-width: 100%;
+  position: relative;
+  width: 470px;
+  @media (min-width: $tablet) {
+    margin: auto;
+  }
+  @media (min-width: $desktop) {
+    display: unset;
+    flex-flow: unset;
+    height: 230px;
+    margin: 100px auto;
+  }
+}
+
+.photo-gallery__group img {
+  @media (min-width: $desktop) {
+  border-radius: var(--round-md);
+  height: 220px;
+  margin-bottom: unset;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  object-fit: cover;
+  position: absolute;
+  transition-delay: 200ms;
+  transition: margin 0.2s ease-in-out;
+  width: 250px;
+}
+}
+
+.photo-gallery__photo {
+  border-radius: var(--round-md);
+  height: 220px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  object-fit: cover;
+  width: 250px;
+  @media (min-width: $tablet) {}
+  @media (min-width: $desktop) {
+    margin-bottom: unset;
+    position: absolute;
+    transition: margin 0.2s ease-in-out;
+    transition-delay: 200ms;
+    &:hover {
+      margin-bottom: 100px;
+    }
+  }
+  @media (min-width: $widescreen) {}
+  img {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .photo-gallery__photo--1 {
+    rotate: -18deg;
+    transition: margin 0.2s ease-in-out;
+    z-index: 1;
+    &:hover {
+      margin-top: -50px;
+      transition-delay: 500ms;
+    }
+  }
+
+  .photo-gallery__photo--2 {
+    bottom: 37px;
+    left: 38px;
+    rotate: -14deg;
+    z-index: 2;
+  }
+  
+  .photo-gallery__photo--3 {
+    bottom: 46px;
+    left: 93px;
+    rotate: -7deg;
+    z-index: 3;
+  }
+  
+  .photo-gallery__photo--4 {
+    bottom: 46px;
+    left: 134px;
+    rotate: 0deg;
+    z-index: 4;
+  }
+  
+  .photo-gallery__photo--5 {
+    bottom: 20px;
+    left: 181px;
+    rotate: 10deg;
+    z-index: 5;
+  }
+  
+  .photo-gallery__photo--6 {
+    bottom: -7px;
+    left: 234px;
+    rotate: 18deg;
+    z-index: 6;
+  }
+}
+
+.heading__photo-gallery {
+  margin-bottom: 30px;
+  text-align: center;
+  width: 100%;
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: -130px;
+  }
+}
