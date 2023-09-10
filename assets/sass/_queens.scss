@@ -69,6 +69,7 @@
     width: 300px;
     max-width: 100%;
     margin: 0 auto;
+    
   
     .queen-box__heading {
       margin-bottom: 25px;
@@ -76,9 +77,15 @@
     
     .queen-box__image {
       margin-bottom: 30px;
+      height: 300px;
+      width: 300px;
+      max-height: 100%;
+      object-fit: cover;      
     }
   }
 }
+
+
 
 .service-cards-group {
   display: grid;

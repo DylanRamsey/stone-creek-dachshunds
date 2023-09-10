@@ -1,7 +1,109 @@
+@use 'config' as *;
 .contact-us {
   padding:  80px 0  
 }
 
 .contact-us__heading {
   text-align: center;
+}
+
+.contact-information {
+  grid-template-columns: 1fr;
+  gap: 80px;
+  margin-bottom: 40px;
+  @media (min-width: $tablet) {}
+  @media (min-width: $desktop) {
+    display: grid;
+  }
+  @media (min-width: $widescreen) {
+    margin-bottom: 150px;
+    grid-template-columns: 1fr 1fr;
+  }
+  h5 {
+    margin-bottom: 20px;
+  }
+}
+
+.contact-information__form {
+  background: $primary;
+  border-radius: 8px;
+  max-width: 100%;
+  margin: auto;
+  padding-top: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 40px;
+  width: 525px;
+  @media (min-width: $widescreen) {
+    margin: unset;
+    margin-left: auto;
+  }
+  .form-group__form-field {
+    @media (min-width: $desktop) {
+      margin-left: auto;
+      width: 227px;
+    }
+  }
+  .home-form {
+    margin-bottom: 0;
+  }
+  /* This isn't great practice and a bit hacky */
+  .button--green {
+    background: var(--site-secondary-color-brown);
+    color: var(--site-secondary-color-green);
+  }  
+}
+
+.contact-information__options {
+  margin: auto;
+  max-width: 100%;
+  width: 315px;
+  @media (min-width: $widescreen) {
+    margin-left: 0;
+    width: 600px;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+    &:hover {
+      color: var(--site-secondary-color-brown);
+    }
+  }
+}
+
+.contact-information__options__contact {
+  align-items: flex-start;
+  display: flex;
+  gap: 15px;
+  img {
+    width: 20px;
+    @media (min-width: $tablet) {
+      width: 30px;
+    }
+    @media (min-width: $desktop) {
+      width: unset;
+    }
+  }
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    @media (min-width: $desktop) {
+      font-size: 1.75rem;
+    }
+  }
+}
+
+.review-platforms {
+  display: flex;
+  gap: 30px;
+  img{
+    height: 138px;
+    width: 138px;
+  }
+}
+
+.contact-information__options__contact {
+  align-items: flex-start;
+  display: flex;
+  gap: 15px;
 }

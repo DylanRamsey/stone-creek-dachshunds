@@ -10,6 +10,7 @@
   <script src="js/index.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="fslightbox.js"></script>
   <?php
   wp_head();
   ?>
