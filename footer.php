@@ -22,7 +22,7 @@
         </div>
         <div class="footer__contact">
           <figure class="footer__logo">
-            <img src="/wp-content/uploads/2022/09/stone-creek-logo.webp" alt="Stone Creek Dachshunds Logo">
+            <img src="/wp-content/uploads/cropped-logo_nobackground.webp" alt="Stone Creek Dachshunds Logo">
           </figure>
         </div>
       </div>

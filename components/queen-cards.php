@@ -50,11 +50,7 @@
         <?php if($serviceCard['queen_card_link']):?>
           <a href="<?= $serviceCard['queen_card_link'] ?>">
             <span class="button button--light">
-              <?php
-                if($serviceCard['queen_card_heading']) {
-                  echo $serviceCard['queen_card_heading'];
-                }
-              ?>
+              Meet me!
             </span>
           </a>
         <?php endif;?>

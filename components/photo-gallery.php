@@ -12,10 +12,9 @@
         <?php foreach($single_photo_card_group['photo_cards'] as $single_photo_card):?>               
           <a data-fslightbox 
             href="<?php echo $single_photo_card['photo_card'];?>"
-            class="photo-gallery__photo photo-gallery__photo--<?php echo $img_counter; ?> "
-          >
+            class="photo-gallery__photo photo-gallery__photo--<?php echo $img_counter; ?>">
             <img 
-              src="<?php echo $single_photo_card['photo_card'];?> " 
+              src="<?php echo $single_photo_card['photo_card'];?>" 
               alt="<?php echo $single_photo_card['photo_card_alt_text'];?>"
               width="250"
               height="220"

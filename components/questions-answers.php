@@ -4,16 +4,17 @@
     $questionsAndAnswersGroup = get_sub_field('q&a_group');
   ?>    
   <div class="qs-and-as__categories-group">
-    <?php foreach($question_categories as $question_category): ?>
+    <?php if($question_categories): ?>
+      <?php foreach($question_categories as $question_category):?>
         <h6 class="qs-and-as__category">
           <a href="<?php echo $question_category['category_link'];?>">
             <?php echo $question_category['category_label'];?>   
           </a>
         </h6>
-    <?php endforeach;?>   
+      <?php endforeach;?>
+    <?php endif;?>
   </div>
-  
-  <?php foreach($questionsAndAnswersGroup as $singleQAndAGroup): ?>
+  <?php foreach($questionsAndAnswersGroup as $singleQAndAGroup):?>
     <div class="qs-and-as__group">
       <h4 
         class="qs-and-as__heading"

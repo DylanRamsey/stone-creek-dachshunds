@@ -36,24 +36,20 @@
         )
       );
     ?>
-    <figure>
       <a href="/">
-        <img class="mobile-navigation__site-logo mobile-only" src="/wp-content/uploads/2022/09/stone-creek-logo.webp" alt="Logo for Stone Creek Dachshunds">
+        <img class="mobile-navigation__site-logo mobile-only" src="/wp-content/uploads/cropped-logo_nobackground.webp" alt="Logo for Stone Creek Dachshunds">
       </a>
-    </figure>
   </nav>
   <nav class="desktop-navigation container">
-    <figure>
-      <a href="/">
-        <?php
-          if(function_exists('the_custom_logo')){
-            $custom_logo_id = get_theme_mod('custom_logo');
-            $logo = wp_get_attachment_image_src($custom_logo_id);
-          }
-        ?>
-        <img class="desktop-navigation__site-logo" src="/wp-content/uploads/2022/09/stone-creek-logo.webp" alt="Logo for Stone Creek Dachshunds">
-      </a>
-    </figure>
+    <a href="/">
+      <?php
+        if(function_exists('the_custom_logo')){
+          $custom_logo_id = get_theme_mod('custom_logo');
+          $logo = wp_get_attachment_image_src($custom_logo_id);
+        }
+      ?>
+      <img class="desktop-navigation__site-logo" src="/wp-content/uploads/cropped-logo_nobackground.webp" alt="Logo for Stone Creek Dachshunds">
+    </a>
     <?php 
       wp_nav_menu(
         array(

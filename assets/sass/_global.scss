@@ -22,6 +22,10 @@ select {
   background: none;
 }
 
+ul {
+  padding: 0;
+}
+
 h1, .h1 {
   color: $primary;
   font-size: 2rem;
@@ -135,7 +139,6 @@ figure {
 
 .interior-page-heading {
   margin-bottom: 30px;
-  margin-top: 30px;
   text-align: center;
 }
 

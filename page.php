@@ -38,7 +38,13 @@
     <?php endif;?>    
     <?php if (get_row_layout() == 'full_width_list'):?>
       <?php get_template_part('components/full', 'list');?>
-    <?php endif;?>        
+    <?php endif;?>
+    <?php if (get_row_layout() == 'queen_info'):?>
+      <?php get_template_part('components/queen', 'info');?>
+    <?php endif;?>
+    <?php if (get_row_layout() == 'wysiwyg'):?>
+      <?php get_template_part('templates/wysiwyg');?>
+    <?php endif;?>      
   <?php endwhile;?>
 <?php endif;?>
 

@@ -5,9 +5,13 @@
 <div class="container">
   <section class="contact-information">
     <div class="contact-information__form">
+      <h2 class="center-text">Send us a message</h2>
       <?php get_template_part('components/contact', 'form');?>
     </div>
     <div class="contact-information__options">
+      <h4>
+        Contact Information:
+      </h4>
       <ul>
         <?php foreach($contact_information as $contact_information_item):?>
           <li class="contact-information__options__contact">
@@ -27,7 +31,16 @@
         <?php endforeach;?>        
       </ul>
       <div>
-        <h5 class="heading heading--brown">
+        <h5>
+        Our Veterinarian:          
+        </h5>
+        <p>
+          Huber Declan DVM<br>
+          7081 Prospect Rd<br>
+          Sarasota, FL 34243<br>
+          (941) 756-1600
+        </p>
+        <h5 class="heading heading--brown center-text">
           Review Us!
         </h5>
         <div class="review-platforms">

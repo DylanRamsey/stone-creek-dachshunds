@@ -2,6 +2,7 @@
   <?php
     $content_block_heading = get_sub_field('heading');
     $content_block_body = get_sub_field('body');
+    $cta = get_sub_field('cta');
     $ctaLink = get_sub_field('cta')['cta_link'];
     $ctaText = get_sub_field('cta')['cta_text'];
     $ctaStyle = get_sub_field('cta')['cta_style'];
@@ -30,20 +31,22 @@
         }
       ?>
     </p>
-    <a href="
-      <?php
-        if($ctaLink) {
-          echo $ctaLink;
-        }
-      ?>
-    ">
-      <span class="button <?= $cta_style ?>">
+    <?php if($ctaLink && $ctaText):?>
+      <a href="
         <?php
-          if($ctaText) {
-            echo $ctaText;
+          if($ctaLink) {
+            echo $ctaLink;
           }
         ?>
-      </span>
-    </a>
+      ">
+        <span class="button <?= $cta_style ?>">
+          <?php
+            if($ctaText) {
+              echo $ctaText;
+            }
+          ?>
+        </span>
+      </a>
+    <?php endif;?>
   </section>
 </section>
